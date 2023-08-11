@@ -1,0 +1,98 @@
+<!--
+    kh.khisrav2018@gmail.com
+    https://kwork.ru/user/khisrav
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#c03540">
+    <title>Azuki</title>
+    <link rel="icon" href="/media/favicon.ico">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/docSlider.css">
+    <link rel="stylesheet" href="/css/scrollCue.css">
+    <link rel="stylesheet" href="/css/mobile-styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="brand">
+        </div>
+        <button class="burger" id="open-menu" onclick="this.classList.toggle('active');"></button>
+        <div class="menu-container">
+            <div class="brand">
+            </div>
+            <a href="javascript://;" class="menu-close">&times;</a>
+            <ul class="nav-menu">
+                <li class="menu-item"><a href="https://www.instagram.com/kh.khisrav/" class="menu-link">INSTAGRAM</a></li>
+                <li class="menu-item"><a href="https://vk.com/gutaussehend" class="menu-link">VK</a></li>
+                <li class="menu-item"><a href="https://kwork.ru/user/khisrav" class="menu-link">KWORK</a></li>
+                <li class="menu-item"><a href="https://t.me/kh_tj" class="menu-link">TELEGRAM</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="docSlider">
+        <nav class="docSlider-pager"><button class="docSlider-button" data-ds-jump="0" tabindex="-1"></button><button class="docSlider-button selected" data-ds-jump="1" tabindex="-1"></button><button class="docSlider-button" data-ds-jump="2" tabindex="-1"></button></nav>
+        <div class="page">
+            <section id="screen-1">
+                <div>
+                    <h1 class="h1" style="margin: 0;font-weight: 400;">СТУДЕНТ ВОЛГАТЕХА</h1>
+                    <p style="font-size:1.125rem">Своей волей и решительностью дважды занял места в Республиканской
+                        олимпиаде - ничто не сможет сбить его с пути.</p>
+                </div>
+                <img class="section-bg" src="/media/mobilebacklei.jpg" alt="">
+            </section>
+        </div>
+        <div class="page" id="page-2">
+            <section id="screen-2">
+                <div>
+                    <h1 class="h1" style="margin: 0;font-weight: 400;">ЧЕЛОВЕК ЗАГАДКА</h1>
+                    <p style="font-size:1.125rem">Перебравшись в новый факультет под названием ЭФ, Хисрав встречает новые приключения, новых друзей и новые проблемы.</p>
+                </div>
+                <img class="section-bg" src="/media/rbr_bg_teaser_left_2.jpg" alt="">
+            </section>
+        </div>
+        <div class="page" id="page-3">
+            <section id="screen-3">
+                <div>
+                    <h1 class="h1" style="margin: 0;font-weight: 400;">60TP KRZEMIEN</h1>
+                    <p style="font-size:1.125rem">Любимый танк Хисрава, играет практически каждый день и при этом успевает учится в универе.</p>
+                    <a href="https://vk.com/gutaussehend" class="btn">Добавить в друзья</a>
+                </div>
+                <img class="section-bg" src="/media/rbr_bg_teaser_left_2.jpg" alt="">
+            </section>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="/js/docSlider.min.js"></script>
+    <script src="/js/scrollCue.min.js"></script>
+    <script>
+        docSlider.init({
+            speed: 600,
+            horizontal: true,
+            beforeChange: function(elements){
+                console.log(elements);
+            }
+        });
+        scrollCue.init({
+            docSlider:true,
+        });
+        $('#open-menu').on('click', function(){
+            $('.menu-container').show(100);
+        });
+        $('.menu-close').on('click', function(){
+            $('.menu-container').hide(100);
+        });
+        function detectmob() {
+        if(window.innerWidth <= 800 || window.innerHeight <= 600) {
+            return true;
+        } else {
+            return false;
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Mono";
+  src: url(/css/font/MonoRegular.woff2);
+}
+@font-face {
+  font-family: "Mono Light";
+  src: url(/css/font/MonoLight.woff2);
+}
+@font-face {
+  font-family: "MSBee";
+  src: url(/css/font/MSBee-Thin.woff2);
+}
+@font-face {
+  font-family: "MSBee Med";
+  src: url(/css/font/MSBee-Medium.woff2);
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.burger {
+  display: flex;
+  outline: none;
+  height: 20px;
+  width: 15px;
+  border: 0px;
+  padding: 0px;
+  background: transparent;
+  transition: all 250ms ease-out;
+  cursor: pointer;
+}
+
+.burger:before, .burger:after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  transition: all 250ms ease-out;
+  will-change: transform;
+}
+
+.burger:before {
+  transform: translateY(-3px);
+}
+
+.burger:after {
+  transform: translateY(3px);
+}
+
+.active.burger:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.active.burger:after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+section div {
+  padding: 16px;
+  padding-top: 100px;
+}
+
+.section-bg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn {
+  font-family: "Montserrat";
+  background: #fff;
+  display: block;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+#header {
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  font-family: "Mono Light";
+}
+#header .brand img {
+  height: 12px;
+  background: #c03540;
+  padding: 8px;
+  border-radius: 6px;
+  z-index: 10;
+}
+#header .nav-menu {
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  list-style: none;
+}
+#header .nav-menu .menu-link {
+  color: #000;
+  display: block;
+  padding: 16px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  transition: all 0.25s ease 0s;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid #777;
+  letter-spacing: 1px;
+}
+#header .nav-menu .menu-link:hover, #header .nav-menu .menu-link:focus {
+  color: #c03540;
+}
+
+h1 {
+  font-size: 1.785rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.docSlider-pager {
+  z-index: 4;
+  position: fixed;
+  bottom: 4px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.docSlider-button {
+  height: 3px;
+  width: 100vw;
+  border-radius: 0;
+  cursor: pointer;
+  display: block;
+  margin: 5px 0;
+  background-color: #fff;
+  opacity: 0.25;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  padding: 32px;
+}
+.menu-close {
+  font-size: 48px;
+  color: #000;
+  text-decoration: none;
+  /* width: 50px; */
+  /* height: 50px; */
+  line-height: 32px;
+  display: inline-block;
+  text-align: center;
+  /* border: 1px solid; */
+  position: fixed;
+  top: 30px;
+  right: 32px;
+}/*# sourceMappingURL=mobile-styles.css.map */
