@@ -1,2 +1,2 @@
 # Azuki
-Azuki Landing Page
+Azuki NFT Landing Page
