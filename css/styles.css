@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Mono";
-  src: url(/css/font/MonoRegular.woff2);
+  src: url(/Azuki/css/font/MonoRegular.woff2);
 }
 @font-face {
   font-family: "Mono Light";
-  src: url(/css/font/MonoLight.woff2);
+  src: url(/Azuki/css/font/MonoLight.woff2);
 }
 @font-face {
   font-family: "MSBee";
-  src: url(/css/font/MSBee-Thin.woff2);
+  src: url(/Azuki/css/font/MSBee-Thin.woff2);
 }
 @font-face {
   font-family: "MSBee Med";
-  src: url(/css/font/MSBee-Medium.woff2);
+  src: url(/Azuki/css/font/MSBee-Medium.woff2);
 }
 .main {
   display: grid;
@@ -229,7 +229,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 695px;
   }
   #screen-1 {
-    background: url(/media/rbr_bg_teaser_left.jpg);
+    background: url(/Azuki/media/rbr_bg_teaser_left.jpg);
     background-position: top;
     background-attachment: fixed;
     background-size: cover;
@@ -245,7 +245,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 100;
   }
   #screen-2, #screen-3 {
-    background: url(/media/rbr_bg_teaser_left_2.jpg);
+    background: url(/Azuki/media/rbr_bg_teaser_left_2.jpg);
     background-position: top;
     background-attachment: fixed;
     background-size: cover;
